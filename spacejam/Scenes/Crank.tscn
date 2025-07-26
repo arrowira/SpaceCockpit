@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://bt7dsuorst0ww"]
+
+[ext_resource type="Script" path="res://Scenes/crank.gd" id="1_gkh3v"]
+[ext_resource type="Texture2D" uid="uid://102whds30olf" path="res://Sprites/WhosRem.png" id="1_hmmaw"]
+[ext_resource type="Texture2D" uid="uid://bbruct48epng3" path="res://Sprites/CrankHandle.png" id="2_4mjp8"]
+[ext_resource type="Texture2D" uid="uid://brmciluge0jdw" path="res://Sprites/CrankEnd.png" id="3_652em"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tkqqt"]
+size = Vector2(26.087, 14.3478)
+
+[node name="Crank" type="Node2D"]
+scale = Vector2(2.3, 2.3)
+script = ExtResource("1_gkh3v")
+
+[node name="Base" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-2.38419e-07, 0.5)
+scale = Vector2(2.5, 2.625)
+texture = ExtResource("1_hmmaw")
+
+[node name="CrankHandle" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, 0.434782)
+scale = Vector2(1, 2.59375)
+texture = ExtResource("2_4mjp8")
+offset = Vector2(0, -10)
+
+[node name="CrankEnd" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -43)
+scale = Vector2(1.625, 1.1875)
+texture = ExtResource("3_652em")
+
+[node name="Area2D" type="Area2D" parent="CrankEnd"]
+position = Vector2(0, 36.2105)
+scale = Vector2(0.615385, 0.842105)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CrankEnd/Area2D"]
+position = Vector2(4.14641e-07, -43.2609)
+shape = SubResource("RectangleShape2D_tkqqt")

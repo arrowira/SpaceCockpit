@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://bhlp3rc0khkl2"]
+[gd_scene load_steps=7 format=3 uid="uid://bhlp3rc0khkl2"]
 
 [ext_resource type="Script" path="res://Scripts/PanCamera.gd" id="1_171x3"]
 [ext_resource type="PackedScene" uid="uid://ba4fs6ky0682q" path="res://Scenes/Ship.tscn" id="1_ncpgo"]
 [ext_resource type="PackedScene" uid="uid://bp4rej43y7wld" path="res://Scenes/Radar.tscn" id="3_4sn0c"]
 [ext_resource type="PackedScene" uid="uid://bs3fl45qkcaqt" path="res://Scenes/ShieldBar.tscn" id="4_a6o7j"]
 [ext_resource type="PackedScene" uid="uid://camqr5107w2eb" path="res://Scenes/ShieldButton.tscn" id="5_ol4ud"]
+[ext_resource type="PackedScene" uid="uid://bt7dsuorst0ww" path="res://Scenes/Crank.tscn" id="6_3epmx"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -21,3 +22,6 @@ position = Vector2(0, -74)
 
 [node name="ShieldButton" parent="." instance=ExtResource("5_ol4ud")]
 position = Vector2(-111, -79)
+
+[node name="Crank" parent="." instance=ExtResource("6_3epmx")]
+position = Vector2(-204, -57)
