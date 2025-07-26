@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bp4rej43y7wld"]
+
+[ext_resource type="Texture2D" uid="uid://ct5x3aybuy1nj" path="res://Sprites/IveBeenReturingByDeath.png" id="1_xbi1x"]
+
+[node name="Radar" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(15, 15)
+texture = ExtResource("1_xbi1x")

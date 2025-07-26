@@ -1,3 +1,9 @@
-[gd_scene format=3 uid="uid://ba4fs6ky0682q"]
+[gd_scene load_steps=2 format=3 uid="uid://ba4fs6ky0682q"]
+
+[ext_resource type="Texture2D" uid="uid://102whds30olf" path="res://Sprites/WhosRem.png" id="1_p2wcj"]
 
 [node name="Ship" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(10, 10)
+texture = ExtResource("1_p2wcj")

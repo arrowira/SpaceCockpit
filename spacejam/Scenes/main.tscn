@@ -1,5 +1,15 @@
-[gd_scene format=3 uid="uid://bhlp3rc0khkl2"]
+[gd_scene load_steps=4 format=3 uid="uid://bhlp3rc0khkl2"]
+
+[ext_resource type="Script" path="res://Scripts/PanCamera.gd" id="1_171x3"]
+[ext_resource type="PackedScene" uid="uid://ba4fs6ky0682q" path="res://Scenes/Ship.tscn" id="1_ncpgo"]
+[ext_resource type="PackedScene" uid="uid://bp4rej43y7wld" path="res://Scenes/Radar.tscn" id="3_4sn0c"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="item2" type="Node2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource("1_171x3")
+
+[node name="Ship" parent="." instance=ExtResource("1_ncpgo")]
+
+[node name="Radar" parent="." instance=ExtResource("3_4sn0c")]
+position = Vector2(271, -6)
