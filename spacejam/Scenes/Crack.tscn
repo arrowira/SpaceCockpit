@@ -1,10 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://blm7fivig2hpi"]
+[gd_scene load_steps=4 format=3 uid="uid://blm7fivig2hpi"]
 
+[ext_resource type="Script" path="res://Scenes/Crack.gd" id="1_d42ka"]
 [ext_resource type="Texture2D" uid="uid://bgkk31d32u1ge" path="res://Sprites/CrackInShip.png" id="1_r201m"]
 
-[node name="Crack" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tpbj3"]
+size = Vector2(165, 163)
+
+[node name="Crack" type="Area2D"]
+script = ExtResource("1_d42ka")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
 scale = Vector2(20, 20)
 texture = ExtResource("1_r201m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_tpbj3")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

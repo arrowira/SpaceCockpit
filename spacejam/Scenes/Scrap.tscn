@@ -1,19 +1,20 @@
 [gd_scene load_steps=4 format=3 uid="uid://podctealmtjo"]
 
 [ext_resource type="Texture2D" uid="uid://ci7nwcilu3mh3" path="res://Sprites/Scrap.png" id="1_v68te"]
-[ext_resource type="Script" path="res://Scenes/MoveScript.gd" id="1_wn10k"]
+[ext_resource type="Script" path="res://Scripts/MoveScript.gd" id="1_wn10k"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f6mcq"]
 size = Vector2(8, 8)
 
-[node name="Scrap" type="Node2D"]
-
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Scrap" type="Area2D"]
 script = ExtResource("1_wn10k")
 
-[node name="Scrap" type="Sprite2D" parent="Area2D"]
+[node name="Scrap" type="Sprite2D" parent="."]
 texture_filter = 1
 texture = ExtResource("1_v68te")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_f6mcq")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

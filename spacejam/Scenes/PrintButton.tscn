@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cq3x433jrsoj6"]
 
 [ext_resource type="Texture2D" uid="uid://32hquc1rdaki" path="res://Sprites/PushP.png" id="1_er6ac"]
-[ext_resource type="Script" path="res://Scenes/PrintScript.gd" id="2_nwnyn"]
+[ext_resource type="Script" path="res://Scripts/PrintScript.gd" id="2_nwnyn"]
 
 [node name="ShieldButton" type="Node2D"]
 
