@@ -1,10 +1,30 @@
-[gd_scene load_steps=2 format=3 uid="uid://bp4rej43y7wld"]
+[gd_scene load_steps=5 format=3 uid="uid://bp4rej43y7wld"]
 
-[ext_resource type="Texture2D" uid="uid://ct5x3aybuy1nj" path="res://Sprites/IveBeenReturingByDeath.png" id="1_xbi1x"]
+[ext_resource type="Script" path="res://Scenes/radarHand.gd" id="1_gyiup"]
+[ext_resource type="PackedScene" uid="uid://d14e6qwrb1oxb" path="res://Scenes/smallRadarItem.tscn" id="1_r8jgc"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_abiep"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_attv6"]
+size = Vector2(6, 140)
 
 [node name="Radar" type="Node2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture_filter = 1
-scale = Vector2(30, 30)
-texture = ExtResource("1_xbi1x")
+[node name="background" type="Sprite2D" parent="."]
+
+[node name="hand" type="Area2D" parent="background"]
+script = ExtResource("1_gyiup")
+
+[node name="Sprite2D" type="Sprite2D" parent="background/hand"]
+position = Vector2(0, -68.25)
+scale = Vector2(6, 137.5)
+texture = SubResource("CanvasTexture_abiep")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="background/hand"]
+position = Vector2(0, -70)
+shape = SubResource("RectangleShape2D_attv6")
+
+[node name="smallRadarItem" parent="background" instance=ExtResource("1_r8jgc")]
+position = Vector2(20, -92)
+
+[connection signal="area_shape_entered" from="background/hand" to="background/hand" method="_on_area_shape_entered"]
