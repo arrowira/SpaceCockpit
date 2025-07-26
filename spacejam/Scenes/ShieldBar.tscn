@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bs3fl45qkcaqt"]
+
+[ext_resource type="Script" path="res://Scripts/shield_bar.gd" id="1_rb1ra"]
+
+[node name="ShieldBar" type="Node2D"]
+script = ExtResource("1_rb1ra")
