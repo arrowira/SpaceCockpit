@@ -1,18 +1,18 @@
-[gd_scene load_steps=7 format=3 uid="uid://bhlp3rc0khkl2"]
+[gd_scene load_steps=9 format=3 uid="uid://bhlp3rc0khkl2"]
 
 [ext_resource type="Script" path="res://Scripts/PanCamera.gd" id="1_171x3"]
-[ext_resource type="PackedScene" uid="uid://ba4fs6ky0682q" path="res://Scenes/Ship.tscn" id="1_ncpgo"]
 [ext_resource type="PackedScene" uid="uid://bp4rej43y7wld" path="res://Scenes/Radar.tscn" id="3_4sn0c"]
 [ext_resource type="PackedScene" uid="uid://bs3fl45qkcaqt" path="res://Scenes/ShieldBar.tscn" id="4_a6o7j"]
 [ext_resource type="PackedScene" uid="uid://camqr5107w2eb" path="res://Scenes/ShieldButton.tscn" id="5_ol4ud"]
+[ext_resource type="PackedScene" uid="uid://blm7fivig2hpi" path="res://Scenes/Crack.tscn" id="6_66248"]
 [ext_resource type="PackedScene" uid="uid://csf2vc6syvshf" path="res://Scenes/ShipWindShield.tscn" id="6_r7ebj"]
+[ext_resource type="PackedScene" uid="uid://c6x82hrrjjoce" path="res://Scenes/ScrapPrinter.tscn" id="7_ckfgm"]
+[ext_resource type="PackedScene" uid="uid://cq3x433jrsoj6" path="res://Scenes/PrintButton.tscn" id="8_h1fa1"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 script = ExtResource("1_171x3")
-
-[node name="Ship" parent="." instance=ExtResource("1_ncpgo")]
 
 [node name="Radar" parent="." instance=ExtResource("3_4sn0c")]
 position = Vector2(331, 101)
@@ -25,3 +25,12 @@ position = Vector2(-247, 69)
 
 [node name="ShipWindShield" parent="." instance=ExtResource("6_r7ebj")]
 position = Vector2(-2, -276)
+
+[node name="Crack" parent="." instance=ExtResource("6_66248")]
+position = Vector2(-223, -274)
+
+[node name="ScrapPrinter" parent="." instance=ExtResource("7_ckfgm")]
+position = Vector2(-508, 62)
+
+[node name="ShieldButton2" parent="." instance=ExtResource("8_h1fa1")]
+position = Vector2(-420, 7)

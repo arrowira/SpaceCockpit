@@ -1,3 +1,10 @@
-[gd_scene format=3 uid="uid://blm7fivig2hpi"]
+[gd_scene load_steps=2 format=3 uid="uid://blm7fivig2hpi"]
+
+[ext_resource type="Texture2D" uid="uid://bgkk31d32u1ge" path="res://Sprites/CrackInShip.png" id="1_r201m"]
 
 [node name="Crack" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(20, 20)
+texture = ExtResource("1_r201m")

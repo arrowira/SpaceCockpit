@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cq3x433jrsoj6"]
+
+[ext_resource type="Texture2D" uid="uid://32hquc1rdaki" path="res://Sprites/PushP.png" id="1_er6ac"]
+[ext_resource type="Script" path="res://Scenes/PrintScript.gd" id="2_nwnyn"]
+
+[node name="ShieldButton" type="Node2D"]
+
+[node name="TextureButton" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = -8.0
+offset_top = -7.0
+offset_right = 67.0
+offset_bottom = 68.0
+texture_normal = ExtResource("1_er6ac")
+stretch_mode = 0
+script = ExtResource("2_nwnyn")
+
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]

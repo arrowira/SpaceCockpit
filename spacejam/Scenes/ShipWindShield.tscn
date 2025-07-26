@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://csf2vc6syvshf"]
 
-[ext_resource type="Script" path="res://Scenes/WindShieldManager.gd" id="1_3xbyb"]
+[ext_resource type="Script" path="res://Scripts/WindShieldManager.gd" id="1_3xbyb"]
 [ext_resource type="Texture2D" uid="uid://bvrkyfxhovmol" path="res://Sprites/SeeTexture.png" id="1_ugdkd"]
 [ext_resource type="Texture2D" uid="uid://c1i7t2u0qndfm" path="res://Sprites/ShieldOnTexture.png" id="2_hp5y1"]
 [ext_resource type="Texture2D" uid="uid://m8i88sc0p4c7" path="res://Sprites/TheWhiteWhale.png" id="4_2ns3l"]
