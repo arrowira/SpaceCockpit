@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://csf2vc6syvshf"]
+
+[ext_resource type="Script" path="res://Scenes/WindShieldManager.gd" id="1_3xbyb"]
+[ext_resource type="Texture2D" uid="uid://bvrkyfxhovmol" path="res://Sprites/SeeTexture.png" id="1_ugdkd"]
+[ext_resource type="Texture2D" uid="uid://c1i7t2u0qndfm" path="res://Sprites/ShieldOnTexture.png" id="2_hp5y1"]
+[ext_resource type="Texture2D" uid="uid://m8i88sc0p4c7" path="res://Sprites/TheWhiteWhale.png" id="4_2ns3l"]
+
+[node name="ShipWindShield" type="Node2D"]
+script = ExtResource("1_3xbyb")
+
+[node name="SeeTexture" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-1.13687e-13, -4.76837e-07)
+scale = Vector2(64.125, 29.817)
+texture = ExtResource("1_ugdkd")
+
+[node name="DefSeeingTexture" type="Sprite2D" parent="SeeTexture"]
+position = Vector2(0.0233918, 0.100613)
+scale = Vector2(1.76023, 1.77751)
+texture = ExtResource("4_2ns3l")
+
+[node name="Shield" type="Sprite2D" parent="SeeTexture"]
+visible = false
+position = Vector2(-0.023392, 0.0503066)
+scale = Vector2(1.74854, 1.77332)
+texture = ExtResource("2_hp5y1")

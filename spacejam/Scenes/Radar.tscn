@@ -5,5 +5,6 @@
 [node name="Radar" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(15, 15)
+texture_filter = 1
+scale = Vector2(30, 30)
 texture = ExtResource("1_xbi1x")

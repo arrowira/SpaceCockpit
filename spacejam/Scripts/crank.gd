@@ -11,6 +11,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	
 	angle +=speed * delta
 	var center = global_position
 	var offset = Vector2(cos(angle), sin(angle)) * radius

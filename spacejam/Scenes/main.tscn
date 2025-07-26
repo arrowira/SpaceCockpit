@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bp4rej43y7wld" path="res://Scenes/Radar.tscn" id="3_4sn0c"]
 [ext_resource type="PackedScene" uid="uid://bs3fl45qkcaqt" path="res://Scenes/ShieldBar.tscn" id="4_a6o7j"]
 [ext_resource type="PackedScene" uid="uid://camqr5107w2eb" path="res://Scenes/ShieldButton.tscn" id="5_ol4ud"]
-[ext_resource type="PackedScene" uid="uid://bt7dsuorst0ww" path="res://Scenes/Crank.tscn" id="6_3epmx"]
+[ext_resource type="PackedScene" uid="uid://csf2vc6syvshf" path="res://Scenes/ShipWindShield.tscn" id="6_r7ebj"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -15,13 +15,13 @@ script = ExtResource("1_171x3")
 [node name="Ship" parent="." instance=ExtResource("1_ncpgo")]
 
 [node name="Radar" parent="." instance=ExtResource("3_4sn0c")]
-position = Vector2(271, -6)
+position = Vector2(331, 101)
 
 [node name="ShieldBar" parent="." instance=ExtResource("4_a6o7j")]
-position = Vector2(0, -74)
+position = Vector2(-210, 0)
 
 [node name="ShieldButton" parent="." instance=ExtResource("5_ol4ud")]
-position = Vector2(-111, -79)
+position = Vector2(-247, 69)
 
-[node name="Crank" parent="." instance=ExtResource("6_3epmx")]
-position = Vector2(-204, -57)
+[node name="ShipWindShield" parent="." instance=ExtResource("6_r7ebj")]
+position = Vector2(-2, -276)

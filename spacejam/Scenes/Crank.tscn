@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://bt7dsuorst0ww"]
 
-[ext_resource type="Script" path="res://Scenes/crank.gd" id="1_gkh3v"]
+[ext_resource type="Script" path="res://Scripts/crank.gd" id="1_gkh3v"]
 [ext_resource type="Texture2D" uid="uid://102whds30olf" path="res://Sprites/WhosRem.png" id="1_hmmaw"]
 [ext_resource type="Texture2D" uid="uid://bbruct48epng3" path="res://Sprites/CrankHandle.png" id="2_4mjp8"]
 [ext_resource type="Texture2D" uid="uid://brmciluge0jdw" path="res://Sprites/CrankEnd.png" id="3_652em"]

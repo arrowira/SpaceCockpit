@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bl1q2suqgmcv1"
-path="res://.godot/imported/ShieldButton.png-b8235d3c1b6085b6b2db432c19023195.ctex"
+uid="uid://bvrkyfxhovmol"
+path="res://.godot/imported/SeeTexture.png-0c6f3d351cbb611513c00909fcad1378.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/ShieldButton.png"
-dest_files=["res://.godot/imported/ShieldButton.png-b8235d3c1b6085b6b2db432c19023195.ctex"]
+source_file="res://Sprites/SeeTexture.png"
+dest_files=["res://.godot/imported/SeeTexture.png-0c6f3d351cbb611513c00909fcad1378.ctex"]
 
 [params]
 
