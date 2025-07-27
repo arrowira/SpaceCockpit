@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://blm7fivig2hpi"]
 
-[ext_resource type="Script" path="res://Scenes/Crack.gd" id="1_d42ka"]
+[ext_resource type="Script" path="res://Scripts/Crack.gd" id="1_d42ka"]
 [ext_resource type="Texture2D" uid="uid://bgkk31d32u1ge" path="res://Sprites/CrackInShip.png" id="1_r201m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tpbj3"]

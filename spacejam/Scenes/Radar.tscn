@@ -1,14 +1,18 @@
-[gd_scene load_steps=7 format=3 uid="uid://bp4rej43y7wld"]
+[gd_scene load_steps=9 format=3 uid="uid://bp4rej43y7wld"]
 
 [ext_resource type="Texture2D" uid="uid://btxomym7ge706" path="res://Sprites/radarBg.png" id="1_4k47a"]
 [ext_resource type="Script" path="res://Scripts/radarHand.gd" id="1_gyiup"]
 [ext_resource type="PackedScene" uid="uid://d14e6qwrb1oxb" path="res://Scenes/smallRadarItem.tscn" id="1_r8jgc"]
+[ext_resource type="Script" path="res://Scenes/playerCollision.gd" id="4_j63xo"]
 [ext_resource type="Script" path="res://Scenes/spawner.gd" id="4_t25ge"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_abiep"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_attv6"]
 size = Vector2(6, 146.25)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7pro1"]
+radius = 75.6637
 
 [node name="Radar" type="Node2D"]
 
@@ -42,11 +46,19 @@ position = Vector2(0, -73.125)
 scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_attv6")
 
+[node name="player" type="Area2D" parent="background"]
+position = Vector2(0, 20)
+script = ExtResource("4_j63xo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="background/player"]
+shape = SubResource("CircleShape2D_7pro1")
+
 [node name="spawner" type="Node2D" parent="."]
 script = ExtResource("4_t25ge")
 
 [node name="spawnCoolDown" type="Timer" parent="spawner"]
-wait_time = 0.2
+wait_time = 3.0
 
 [connection signal="area_shape_entered" from="background/hand" to="background/hand" method="_on_area_shape_entered"]
+[connection signal="area_shape_entered" from="background/player" to="background/player" method="_on_area_shape_entered"]
 [connection signal="timeout" from="spawner/spawnCoolDown" to="spawner" method="_on_spawn_cool_down_timeout"]

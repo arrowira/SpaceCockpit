@@ -14,3 +14,7 @@ config/name="spaceJam"
 run/main_scene="res://Scenes/main.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Music="*res://Scenes/music.tscn"

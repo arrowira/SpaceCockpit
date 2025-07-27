@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bnh4v46s6ayee"]
+
+[ext_resource type="AudioStream" uid="uid://b2p2hsm613paw" path="res://spaceGameMusic.mp3" id="1_0wyb2"]
+
+[node name="music" type="Node2D"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_0wyb2")
+autoplay = true
