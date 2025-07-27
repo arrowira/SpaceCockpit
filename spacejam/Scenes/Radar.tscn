@@ -28,7 +28,7 @@ position = Vector2(165, -275)
 position = Vector2(-320, 90)
 
 [node name="smallRadarItem3" parent="background" instance=ExtResource("1_r8jgc")]
-position = Vector2(490, 205)
+position = Vector2(-25, -350)
 
 [node name="hand" type="Area2D" parent="background"]
 position = Vector2(0, 20)

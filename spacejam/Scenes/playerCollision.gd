@@ -14,5 +14,6 @@ func _process(delta: float) -> void:
 func _on_area_shape_entered(area_rid: RID, area: Area2D, area_shape_index: int, local_shape_index: int) -> void:
 	if area.name == "radarItemS":
 		#damaged
+		get_parent().get_parent().get_parent().get_node("ShipWindShield").takeDamage()
 		area.get_parent().queue_free()
 		print("you got hit!")

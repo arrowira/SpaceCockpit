@@ -1,26 +1,24 @@
-[gd_scene load_steps=5 format=3 uid="uid://csf2vc6syvshf"]
+[gd_scene load_steps=4 format=3 uid="uid://csf2vc6syvshf"]
 
 [ext_resource type="Script" path="res://Scripts/WindShieldManager.gd" id="1_3xbyb"]
-[ext_resource type="Texture2D" uid="uid://bvrkyfxhovmol" path="res://Sprites/SeeTexture.png" id="1_ugdkd"]
+[ext_resource type="Texture2D" uid="uid://dwtu2fec4eaql" path="res://Sprites/windshield.png" id="2_8la7t"]
 [ext_resource type="Texture2D" uid="uid://c1i7t2u0qndfm" path="res://Sprites/ShieldOnTexture.png" id="2_hp5y1"]
-[ext_resource type="Texture2D" uid="uid://m8i88sc0p4c7" path="res://Sprites/TheWhiteWhale.png" id="4_2ns3l"]
 
 [node name="ShipWindShield" type="Node2D"]
+scale = Vector2(0.5, 0.5)
 script = ExtResource("1_3xbyb")
 
 [node name="SeeTexture" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(-1.13687e-13, -4.76837e-07)
-scale = Vector2(64.125, 29.817)
-texture = ExtResource("1_ugdkd")
+texture = ExtResource("2_8la7t")
+hframes = 2
+vframes = 3
 
-[node name="DefSeeingTexture" type="Sprite2D" parent="SeeTexture"]
-position = Vector2(0.0233918, 0.100613)
-scale = Vector2(1.76023, 1.77751)
-texture = ExtResource("4_2ns3l")
-
-[node name="Shield" type="Sprite2D" parent="SeeTexture"]
-visible = false
-position = Vector2(-0.023392, 0.0503066)
-scale = Vector2(1.74854, 1.77332)
+[node name="Shield" type="Polygon2D" parent="SeeTexture"]
+z_index = -1
+position = Vector2(1, 0.999999)
+scale = Vector2(112.125, 52.8751)
+color = Color(0.686275, 0.847059, 1, 0.396078)
 texture = ExtResource("2_hp5y1")
+polygon = PackedVector2Array(-8.00891, 4.89834, 8.02675, 4.8416, 9.36454, 3.7825, 10.4704, 2.00473, 10.9521, -0.037825, 11.3088, -2.15603, 11.3712, -5.16311, 10.5061, -8.66193, 9.86398, -9.92906, 8.64213, -11.234, 7.50055, -11.8014, -8.00891, -11.669, -9.03455, -10.9503, -10.1761, -9.41843, -10.6131, -8.43498, -10.5953, -7.81086, -10.7915, -7.7163, -10.7737, -6.99763, -10.9966, -6.9598, -10.9966, -6.27895, -11.1929, -6.18439, -11.1572, -5.12529, -11.3534, -5.08746, -11.3534, -1.73995, -11.2196, -1.56974, -10.9788, 0.0945625, -10.6577, 1.28605, -9.81047, 3.15839, -8.59754, 4.67139)

@@ -24,7 +24,8 @@ position = Vector2(-210, 0)
 position = Vector2(-247, 69)
 
 [node name="ShipWindShield" parent="." instance=ExtResource("6_r7ebj")]
-position = Vector2(-2, -276)
+position = Vector2(-2, -175)
+scale = Vector2(0.3, 0.3)
 
 [node name="Crack" parent="." instance=ExtResource("6_66248")]
 position = Vector2(-223, -274)
@@ -32,5 +33,5 @@ position = Vector2(-223, -274)
 [node name="ScrapPrinter" parent="." instance=ExtResource("7_ckfgm")]
 position = Vector2(-508, 62)
 
-[node name="ShieldButton2" parent="." instance=ExtResource("8_h1fa1")]
+[node name="scrapButton" parent="." instance=ExtResource("8_h1fa1")]
 position = Vector2(-420, 7)
